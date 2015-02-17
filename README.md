@@ -17,16 +17,16 @@ Usage
 
 Examples:
 
-    $ ds start mysql # starts the service
+    $ ds start mysql            # starts the service
     * Starting MySQL. [OK]
 
-    $ ds stop mysql # stops the service
+    $ ds stop mysql             # stops the service
     * Stopping MySQL. [OK]
 
-    $ ds restart postgresql # restarts the service
+    $ ds restart postgresql     # restarts the service
     * Restarting MySQL. [OK]
 
-    $ ds info # returns status information for all the services
+    $ ds info                   # returns status information for all the services
     # OS X
     * 5406 daemon (com.apple.CoreAuthentication.daemon) [Running]
     * 1153 ssh-agent (org.openbsd.ssh-agent) [Running]
@@ -38,17 +38,17 @@ Examples:
     * [-] plymouth (/etc/init/plymouth) [Stopped]
     * [-] dmesg (/etc/init/dmesg) [Disabled]
 
-    $ ds info sshd # returns detailed information for a specific service
+    $ ds info sshd                   # returns detailed information for a specific service
     Real Name: org.openbsd.ssh-agent
     File: ~/Library/LaunchAgents/org.openbsd.ssh-agent
     Status: Running
     Code: 0
 
-    $ ds enabled # returns a list of the enabled (not necessarily running!) services
+    $ ds enabled                   # returns a list of the enabled (not necessarily running!) services
     * 3417 atd (/etc/init.d/atd)
     * 3400 tty3 (/etc/init/tty3.conf)
 
-    $ ds disabled # returns a list of the disabled services
+    $ ds disabled                   # returns a list of the disabled services
     * [-] dmesg (/etc/init/dmesg)
 
 Advanced Usage
