@@ -1,4 +1,4 @@
-ds
+ds (daemon services)
 ==
 `ds` is a wrapper for some Unix daemon control facilities. It provides a short and concise
   interface to `launctl(1)` (OS X), `init(8)` and `upstart(7)` (standard Linux and Debian-based
@@ -55,8 +55,19 @@ Advanced Usage
 --------------
 
     ds reset name
-    ds debug name
     ds kill name [signal]
+
+Examples:
+
+    $ ds reset mariadb              # Reload the source file and restarts the service. Useful for debugging scripts.
+
+    # All of these are equivalent, the signal can be either a name or a number.
+    $ ds kill apache2 9
+    $ ds kill apache2 KILL
+    $ ds kill apache2 kill
+    $ ds kill apache2 SIGKILL
+
+
 
 TODO
 ----
