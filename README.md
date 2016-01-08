@@ -1,7 +1,7 @@
 ds (daemon services)
 ==
 `ds` is a wrapper for some Unix daemon control facilities. It provides a short and concise
-  interface to `launctl(1)` (OS X), `init(8)` and `upstart(7)` (standard Linux and Debian-based
+  interface to `launchctl(1)` (OS X), `init(8)` and `upstart(7)` (standard Linux and Debian-based
   distros).
 
 Usage
