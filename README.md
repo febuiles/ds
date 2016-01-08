@@ -24,7 +24,7 @@ Examples:
     * Stopping MySQL. [OK]
 
     $ ds restart postgresql     # restarts the service
-    * Restarting MySQL. [OK]
+    * Restarting PostgreSQL. [OK]
 
     $ ds info                   # returns status information for all the services
     # OS X
