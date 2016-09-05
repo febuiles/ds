@@ -1,6 +1,33 @@
 use std::env;
 use std::process;
 
+fn exit_with_usage() {
+    println!("print_usage");
+    process::exit(1);
+}
+
+fn start(service: String) {
+    println!("{}", service);
+}
+
+fn stop(service: String) {
+    println!("{}", service);
+}
+
+fn restart(service: String) {
+    println!("{}", service);
+}
+
+fn info(service: String) {
+    println!("{}", service);
+}
+
+fn enabled() {
+}
+
+fn disabled() {
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     let argc = args.len();
