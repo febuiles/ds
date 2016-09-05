@@ -1,3 +1,5 @@
+**No code to see here stranger, please move along...**
+
 ds (daemon services)
 ==
 `ds` is a wrapper for some Unix daemon control facilities. It provides a short and concise
